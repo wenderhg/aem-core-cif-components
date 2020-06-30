@@ -90,7 +90,7 @@ public class ProductTeaserImpl implements ProductTeaser {
             combinedSku = SiteNavigation.toProductSkus(selection);
 
             // Get MagentoGraphqlClient from the resource.
-            MagentoGraphqlClient magentoGraphqlClient = MagentoGraphqlClient.create(resource);
+            MagentoGraphqlClient magentoGraphqlClient = MagentoGraphqlClient.create(resource, null, request);
 
             // Fetch product data
             if (magentoGraphqlClient != null) {
